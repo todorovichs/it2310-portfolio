@@ -1,2 +1,33 @@
 # it2310-portfolio
 My web design portfolio for IT 2310 at Tri-C
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My First HTML Page</title>
+</head>
+<body>
+    <h1>[Hey! Welcome]</h1>
+
+    <p>We will be building web pages using current technologies including but not limited to HTML, Cascading Style Sheets (CSS), 
+        and JavaScript. The focus on the course is developing a foundation in web programming. The prerequisite for this class was
+        IT Concepts for Programmers. I hope it brings me glory to the tech world.</p>
+
+    <p>I'm excited to learn <strong>[Programming]</strong> this semester.</p>
+
+    <a href="https://www.tri-c.edu/programs/information-technology/" target="_blank">
+
+        Visit Tri-C IT Programs
+
+    </a>
+
+    <br><br>
+
+    <img src="images/bmd_tout_absBatman_1x1.avif" width="200" height="200" alt="[Absolute Batman with a lively orange background]">
+</body>
+
+</html>
