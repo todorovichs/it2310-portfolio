@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Lab 8 - Interactive Button</title>
+
+    <style>
+
+        body {
+
+            font-family: Arial, sans-serif;
+
+            text-align: center;
+
+            margin-top: 50px;
+
+        }
+
+        button {
+
+            font-size: 20px;
+
+            padding: 10px 20px;
+
+            background-color: #4CAF50;
+
+            color: white;
+
+            border: none;
+
+            border-radius: 5px;
+
+            cursor: pointer;
+
+            margin: 5px;
+
+        }
+
+        button:hover {
+
+            background-color: #45a049;
+
+        }
+
+        #greeting {
+
+            font-size: 18px;
+
+            color: #333;
+
+            margin-top: 20px;
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <h1>Welcome to My Page</h1>
+
+    <button id="nameButton">Click Me!</button>
+
+    <button id="colorButton">Time and Date!</button>
+
+    <p id="greeting"></p>
+
+    <script>
+
+        // PART 1: Output your name using document.write
+        document.write("<p>Sean Todorovich, Student</p>");
+
+        // PART 2: Select elements using their IDs
+        const button = document.getElementById("nameButton");
+        const colorButton = document.getElementById("colorButton");
+        const greeting = document.getElementById("greeting");
+
+        // PART 3: Add a click event listener to the first button
+        button.addEventListener("click", () => {
+            // Change the button's background color when clicked
+            button.style.backgroundColor = "#FF5733";
+
+            // Prompt the user to enter their name
+            const user = prompt("What is your name?");
+
+            // If a name is entered, show alert and display in paragraph
+            if (user) {
+                alert(`Hello, ${user}!`);
+                greeting.textContent = `Hello, ${user}!`;
+            } else {
+                greeting.textContent = "";
+            }
+        });
+
+        // PART 4: Second button does something different — shows the current date/time
+        colorButton.addEventListener("click", () => {
+            colorButton.style.backgroundColor = "#9C27B0";
+            const now = new Date().toLocaleString();
+            alert(`The current date and time is: ${now}`);
+            greeting.textContent = `Current date/time: ${now}`;
+        });
+
+    </script>
+
+</body>
+
+</html>
